@@ -1,0 +1,47 @@
+.logo-ninja {
+    max-height: 38px; 
+}
+body{
+    background-color: #fdc5f5;
+}
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: #b388eb;
+}
+.calculadora {
+  align-items: center;
+  background-color: #f7aef8;
+	width: 100%;
+	max-width: 320px;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 1.2rem;
+  border: thin solid #8093f1;
+}
+.resultado {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 1px #f7aef8;
+  }
+.left{
+    margin-left: -80px;
+    margin-top: -60px;
+}
+  .btn {
+    width: 60px;
+    height: 52px;
+    margin: 5px;
+    box-shadow: 1px 1px 1px #72ddf7;
+  }
+  .Intro {
+    height: 110px;
+  }
+  .doble {
+    width: 130px;
+    margin: 5px;
+    box-shadow: 1px 1px 1px #72ddf7;
+  }

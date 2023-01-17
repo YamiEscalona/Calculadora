@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Calculadora.css" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-body-emphasis">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo-ninja" src="assets/IMG/ninja.png" alt="logo ninja" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/YamiEscalona">GitHub</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Proyectos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Calculadora/Calculadora.html">Calculadora</a></li>
+                            <li><a class="dropdown-item" href="#">Fechas</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="Practica/Hola-nombre.html">Hola
+                                    Nombre</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Formulario</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Más información</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="Calculadora.js"></script>
+    <h1>Calculadora</h1>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="calculadora">
+                        <div class="display"><input id="resultado" type="text" class="form-control resultado" /></div>
+                        <div class="row">
+                            <button onclick="calcular('accion', '/')"
+                                class="btn btn-info btn-lg font-weight-light">/</button>
+                            <button onclick="calcular('accion', '.')"
+                                class="btn btn-info btn-lg font-weight-light">.</button>
+                            <button onclick="calcular('accion', '*')"
+                                class="btn btn-info btn-lg font-weight-light">x</button>
+                            <button onclick="calcular('accion', '+')"
+                                class="btn btn-info btn-lg font-weight-light">+</button>
+                        </div>
+                        <div class="row">
+                            <button onclick="calcular('valor', 7)"
+                                class="btn btn-info btn-lg font-weight-light">7</button>
+                            <button onclick="calcular('valor', 8)"
+                                class="btn btn-info btn-lg font-weight-light">8</button>
+                            <button onclick="calcular('valor', 9)"
+                                class="btn btn-info btn-lg font-weight-light">9</button>
+                            <button onclick="calcular('accion', '-')"
+                                class="btn btn-info btn-lg font-weight-light">-</button>
+                        </div>
+                        <div class="row" style="margin-top: 1px;">
+                            <button onclick="calcular('valor', 4)"
+                                class="btn btn-info btn-lg font-weight-light">4</button>
+                            <button onclick="calcular('valor', 5)"
+                                class="btn btn-info btn-lg font-weight-light">5</button>
+                            <button onclick="calcular('valor', 6)"
+                                class="btn btn-info btn-lg font-weight-light">6</button>
+                            <button onclick="calcular('accion', '=')" type="button"
+                                class="btn  btn-info btn-lg Intro">=</button>
+                        </div>
+                        <div class="row left">
+                            <button onclick="calcular('valor', 1)"
+                                class="btn btn-info btn-lg font-weight-light">1</button>
+                            <button onclick="calcular('valor', 2)"
+                                class="btn  btn-info btn-lg font-weight-light">2</button>
+                            <button onclick="calcular('valor', 3)"
+                                class="btn  btn-info btn-lg font-weight-light">3</button>
+                        </div>
+                        <div class="row">
+                            <button onclick="calcular('valor', 0)"
+                                class="btn  btn-info doble btn-lg font-weight-light">0</button>
+                            <button onclick="calcular('accion', 'c')"
+                                class="btn  btn-info btn-lg font-weight-light doble">C</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
